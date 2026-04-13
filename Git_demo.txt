@@ -1,0 +1,135 @@
+THOUGHT TO CODE – Logical Problems
+
+LEVEL 1: Basic Thinking 
+
+1. Check if a number is even or odd
+2. Find the largest of 3 numbers
+3. Check if a number is positive, negative, or zero
+4. Swap two numbers without a third variable
+5. Reverse a number
+6. Count digits in a number
+7. Find sum of digits
+8. Check if a number is palindrome
+9. Print multiplication table of a number
+10. Find factorial of a number
+11. Check if number is prime
+12. Print all factors of a number
+13. Find GCD of two numbers
+14. Find LCM of two numbers
+15. Sum of first N natural numbers
+16. Check if year is leap year
+17. Find smallest of 3 numbers
+18. Print numbers from 1 to N
+19. Print even numbers between 1 and N
+20. Find square and cube of a number
+
+LEVEL 2: Pattern & Iteration Thinking 
+
+21. Print star pyramid
+22. Print inverted pyramid
+23. Print number triangle
+24. Print Floyd’s triangle
+25. Count number of vowels in a string
+26. Reverse a string
+27. Check if string is palindrome
+28. Count words in a sentence
+29. Find frequency of a character
+30. Remove duplicate characters from string
+31. Print Fibonacci series
+32. Find nth Fibonacci number
+33. Sum of series (1 + 2 + … + n)
+34. Print alternate numbers
+35. Find second largest number in array
+36. Find smallest element in array
+37. Count even and odd numbers in array
+38. Reverse an array
+39. Find sum of array elements
+40. Find average of array elements
+
+LEVEL 3: Logical Structuring 
+
+41. Check if two strings are anagrams
+42. Find missing number in sequence
+43. Find duplicate number in array
+44. Merge two arrays
+45. Remove duplicates from array
+46. Rotate array left by 1
+47. Rotate array right by 1
+48. Find intersection of two arrays
+49. Find union of two arrays
+50. Check if array is sorted
+51. Sort array without built-in functions
+52. Find largest consecutive sequence
+53. Find pair with given sum
+54. Count frequency of elements
+55. Move all zeros to end
+
+LEVEL 4: Real-world Thinking 
+
+56. ATM withdrawal system (validate balance)
+57. Student grading system
+58. Simple login system (username/password)
+59. Bank interest calculator
+60. Electricity bill calculator
+61. Shopping cart total with discount
+62. Parking fee calculator
+63. Movie ticket booking logic
+64. Salary calculation with tax deduction
+65. Simple calculator with menu
+
+LEVEL 5: Advanced Logical Thinking 
+
+66. Design a traffic light system logic
+67. Simulate elevator movement between floors
+68. Library system (issue/return books)
+69. Task scheduler (priority-based execution)
+70. Inventory management system
+
+
+
+
+
+Level 1
+5. Reverse a number
+    1.To take a no.(n)-----123
+    2.To get the last digit.(n%10)-----123%10=3  ---- 12%10=2----1%10=1
+    3.To add that last digit it to reverse no.(rev*10+digit)----- 0*10+3=3----3*10+2=32---32*10+1=321
+    4.And remove it that last digit to the original no.(n/10)-----123/10=12----12/10=1---1/10=0
+    5.Repeat this process until no. become zero. 
+    6.And than simply print the reverse no.
+
+Level 2
+31. Print Fibonacci series (0,1,1,2,3,5,8,......)
+    1.To take a size of series.(for ex=num)
+    1.Then take two variables i.e. a=0,b=1 
+    2.And both nos. print as it is
+    3.After that we take a loop that starts from index 2 because 1st index is 0 and 2nd index is 1. ---(int i=2;i<num;i++)
+    4.And then add the value of a and b and store it into the third variable(c). And print that 3rd variable.
+    5.After this we will perform the swapping between a = b and b = c
+   
+Level 3
+43. Find duplicate number in array
+    1.1st to create an array with size. (int arr[]={1,3,2,3,4};) 
+    2.Now we are creating two loops.
+         (i=0;i<arr.length;i++)  ==== This loop is for hold the one element
+           (int j=i+1;j<arr.length;j++) ==== And this is for comparing the other elements
+    3.And then we will put one condition inside the loop for comparing both values.---- (arr[i]==arr[j])
+            If it is same than print those values.
+
+Level 4
+65. Simple calculator with menu
+    1.To print all the menu options like (Press 1 is for addition,...)
+    2.To take two inputs from the users to perform any of the operations.(like Addition,Subtraction,Multiplication,.....)
+    3.And then write the code for those options that we are providing inside the switch case. 
+      But in division operation it does not work if divisor is 0. So we put the condition for division operation.
+          (b!=0)
+
+
+Level 5  
+66. Design a traffic light system logic
+    1.First traffic light work continuously. That's why we are using infinite loop. 
+    2.And set the timer between lights to maintain the follow of light. 
+          ->Suppose the time limit is 5s
+            And Red light is running ----> After 5s Red light is wait and switch to the Green light
+          ->This process is Repeated continuously 
+                  
